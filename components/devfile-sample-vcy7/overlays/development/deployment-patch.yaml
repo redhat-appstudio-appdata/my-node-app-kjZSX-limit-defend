@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-vcy7
+  namespace: sbaird-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:758b4e9d5d6453d1ec9af58aee6a8eba0cfb2aa0fe8fef0be8b55b641b105ace
+        name: my-nodejs
+        resources: {}
+status: {}

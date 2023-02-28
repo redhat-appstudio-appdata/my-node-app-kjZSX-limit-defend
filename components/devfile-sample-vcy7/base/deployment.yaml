@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-vcy7
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:kjZSX-devfile-sample-vcy7
+      - image: quay.io/redhat-appstudio/user-workload@sha256:758b4e9d5d6453d1ec9af58aee6a8eba0cfb2aa0fe8fef0be8b55b641b105ace
         name: my-nodejs
         ports:
         - containerPort: 3001
